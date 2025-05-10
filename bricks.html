@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bricks Breaker | Ultimate Game Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bricks.css">
+</head>
+<body>
+    <button class="back-button">Back to Hub</button>
+    
+    <div class="game-container">
+        <h1>Bricks Breaker</h1>
+        
+        <div class="game-info">
+            <div class="score-display">Score: <span id="score">0</span></div>
+            <div class="lives-display">Lives: <span id="lives">3</span></div>
+            <div class="level-display">Level: <span id="level">1</span></div>
+        </div>
+        
+        <canvas id="gameCanvas" width="800" height="500"></canvas>
+        
+        <div class="game-controls">
+            <button id="startBtn">Start Game</button>
+            <button id="winDemoBtn">Win Level Demo</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="bricks.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo King | Ultimate Game Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ludo.css">
+</head>
+<body>
+    <button class="back-button">Back to Hub</button>
+    
+    <div class="game-container">
+        <h1>Ludo King</h1>
+        
+        <div class="game-info">
+            <div class="player-turn">Current Turn: <span id="currentPlayer">Red</span></div>
+            <div class="dice-value">Dice: <span id="diceValue">-</span></div>
+        </div>
+        
+        <div class="ludo-board" id="board">
+            <!-- Board will be generated with JavaScript -->
+        </div>
+        
+        <div class="game-controls">
+            <button id="rollDiceBtn">Roll Dice</button>
+            <button id="winDemoBtn">Win Demo</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="ludo.js"></script>
+</body>
+</html>

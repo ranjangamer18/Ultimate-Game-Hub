@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subway Runner | Ultimate Game Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="runner.css">
+</head>
+<body>
+    <button class="back-button">Back to Hub</button>
+    
+    <div class="game-container">
+        <h1>Subway Runner</h1>
+        
+        <div class="game-info">
+            <div class="score-display">Score: <span id="score">0</span></div>
+            <div class="high-score-display">High Score: <span id="highScore">0</span></div>
+            <div class="coins-display">Coins: <span id="coins">0</span></div>
+        </div>
+        
+        <div class="game-area">
+            <canvas id="gameCanvas" width="800" height="400"></canvas>
+            <div id="startScreen" class="overlay">
+                <h2>Subway Runner</h2>
+                <p>Avoid obstacles and collect coins!</p>
+                <button id="startBtn">Start Game</button>
+            </div>
+            <div id="gameOverScreen" class="overlay hidden">
+                <h2>Game Over</h2>
+                <p>Your score: <span id="finalScore">0</span></p>
+                <button id="restartBtn">Play Again</button>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="jumpBtn">Jump (Space)</button>
+            <button id="slideBtn">Slide (Down)</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="runner.js"></script>
+</body>
+</html>
